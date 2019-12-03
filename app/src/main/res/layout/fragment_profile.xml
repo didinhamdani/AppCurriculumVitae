@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment">
+
+    <TextView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/curriculum_vitae"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_bolditalic"/>
+
+   <androidx.cardview.widget.CardView
+       android:layout_marginTop="100dp"
+       android:layout_below="@+id/cv"
+       android:id="@+id/cardview_gambar"
+       android:layout_width="128dp"
+       android:layout_height="128dp"
+       app:cardCornerRadius="64dp"
+       android:layout_centerInParent="true">
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:scaleType="centerCrop"
+           android:src="@drawable/didin"/>
+   </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/cardview_gambar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Didin Hamdani"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/ttl"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bandung, 8 Juni 1998"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+</RelativeLayout>
